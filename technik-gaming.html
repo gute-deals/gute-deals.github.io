@@ -5,8 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Technik und Gaming | Gute Deals DE</title>
 <meta name="description" content="Ausgewählte Shops im Bereich Technik und Gaming. Alle Shop-Links sind als Werbung gekennzeichnete Partnerlinks.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://gute-deals.github.io/technik-gaming.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Gute Deals DE">
+<meta property="og:title" content="Technik und Gaming | Gute Deals DE">
+<meta property="og:description" content="Ausgewählte Shops im Bereich Technik und Gaming. Alle Shop-Links sind als Werbung gekennzeichnete Partnerlinks.">
+<meta property="og:url" content="https://gute-deals.github.io/technik-gaming.html">
+<meta property="og:image" content="https://gute-deals.github.io/bilder/og-gute-deals.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css">
 <style>
@@ -16,6 +24,22 @@
   .partner-card .cta-row { margin-top:auto; }
   .gd-note { max-width:720px; margin:0 auto; }
   .gd-navi { font-size:0.9rem; }
+  .site-header .nav { height:auto; min-height:72px; flex-wrap:wrap; gap:6px 18px; padding-top:10px; padding-bottom:10px; }
+  .brand { white-space:nowrap; }
+  .gd-text { max-width:780px; }
+  .gd-text h1 { font-size:clamp(1.9rem, 4.4vw, 2.8rem); }
+  .gd-text h2 { font-size:1.5rem; margin-top:0.2em; }
+  .gd-text h3 { margin-top:1.2em; }
+  .gd-kompakt { padding:48px 0; }
+  .gd-check { list-style:none; padding-left:0 !important; }
+  .gd-text ul { color:var(--text-soft); padding-left:1.25em; }
+  .gd-text li { margin-bottom:0.55em; }
+  .gd-text .disclaimer-box { margin-bottom:24px; }
+  .gd-inhalt { font-size:0.92rem; color:var(--text-soft); margin:8px 0 0; }
+  .gd-inhalt a { color:var(--accent); }
+  .gd-stand { font-size:0.85rem; margin-top:24px; }
+  .gd-ratgeber { margin-top:8px; }
+  .gd-ratgeber a { color:var(--accent); font-weight:600; }
 </style>
 </head>
 <body>
@@ -23,7 +47,7 @@
 <header class="site-header">
   <div class="container nav">
     <a href="index.html" class="brand">Gute Deals DE</a>
-    <span class="gd-navi"><a href="technik-gaming.html">Technik und Gaming</a> · <a href="haushalt-kueche.html">Haushalt und Küche</a> · <a href="reisen.html">Reisen</a> · <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">LEGO</a></span>
+    <span class="gd-navi"><a href="technik-gaming.html">Technik und Gaming</a> · <a href="haushalt-kueche.html">Haushalt und Küche</a> · <a href="reisen.html">Reisen</a> · <a href="index.html#ratgeber">Ratgeber</a> · <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">LEGO</a></span>
   </div>
 </header>
 
@@ -57,6 +81,16 @@
     <span><a href="https://razhwan03.github.io/wirkstatt-website/impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="https://razhwan03.github.io/wirkstatt-website/">Wirkstatt</a></span>
   </div>
 </footer>
-
+<script>
+(function () {
+  var q = new URLSearchParams(window.location.search).get("quelle");
+  if (q !== "pinterest" && q !== "instagram") { return; }
+  document.querySelectorAll('a[href^="https://www.awin1.com/"]').forEach(function (a) {
+    var h = a.getAttribute("href");
+    var leer = /([?&])clickref3=(&|$)/;
+    a.setAttribute("href", leer.test(h) ? h.replace(leer, "$1clickref3=" + q + "$2") : h + "&clickref3=" + q);
+  });
+})();
+</script>
 </body>
 </html>
