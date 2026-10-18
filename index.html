@@ -3,10 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gute Deals DE | Ausgewählte Shops nach Bereichen</title>
-<meta name="description" content="Ausgewählte Shops nach Bereichen. Alle Shop-Links sind als Werbung gekennzeichnete Partnerlinks.">
-<meta name="robots" content="index, follow">
+<title>Gute Deals DE | Ratgeber und ausgewählte Shops</title>
+<meta name="description" content="Ratgeber zu Mietwagen, Espresso unterwegs und mehr, dazu ausgewählte Shops nach Bereichen. Alle Shop-Links sind als Werbung gekennzeichnete Partnerlinks.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://gute-deals.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Gute Deals DE">
+<meta property="og:title" content="Gute Deals DE | Ratgeber und ausgewählte Shops">
+<meta property="og:description" content="Ratgeber zu Mietwagen, Espresso unterwegs und mehr, dazu ausgewählte Shops nach Bereichen. Alle Shop-Links sind als Werbung gekennzeichnete Partnerlinks.">
+<meta property="og:url" content="https://gute-deals.github.io/">
+<meta property="og:image" content="https://gute-deals.github.io/bilder/og-gute-deals.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css">
 <style>
@@ -16,26 +24,66 @@
   .partner-card .cta-row { margin-top:auto; }
   .gd-note { max-width:720px; margin:0 auto; }
   .gd-navi { font-size:0.9rem; }
+  .site-header .nav { height:auto; min-height:72px; flex-wrap:wrap; gap:6px 18px; padding-top:10px; padding-bottom:10px; }
+  .brand { white-space:nowrap; }
+  .gd-text { max-width:780px; }
+  .gd-text h1 { font-size:clamp(1.9rem, 4.4vw, 2.8rem); }
+  .gd-text h2 { font-size:1.5rem; margin-top:0.2em; }
+  .gd-text h3 { margin-top:1.2em; }
+  .gd-kompakt { padding:48px 0; }
+  .gd-check { list-style:none; padding-left:0 !important; }
+  .gd-text ul { color:var(--text-soft); padding-left:1.25em; }
+  .gd-text li { margin-bottom:0.55em; }
+  .gd-text .disclaimer-box { margin-bottom:24px; }
+  .gd-inhalt { font-size:0.92rem; color:var(--text-soft); margin:8px 0 0; }
+  .gd-inhalt a { color:var(--accent); }
+  .gd-stand { font-size:0.85rem; margin-top:24px; }
+  .gd-ratgeber { margin-top:8px; }
+  .gd-ratgeber a { color:var(--accent); font-weight:600; }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Gute Deals DE", "url": "https://gute-deals.github.io/", "inLanguage": "de"}</script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container nav">
     <a href="index.html" class="brand">Gute Deals DE</a>
-    <span class="gd-navi"><a href="technik-gaming.html">Technik und Gaming</a> · <a href="haushalt-kueche.html">Haushalt und Küche</a> · <a href="reisen.html">Reisen</a> · <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">LEGO</a></span>
+    <span class="gd-navi"><a href="technik-gaming.html">Technik und Gaming</a> · <a href="haushalt-kueche.html">Haushalt und Küche</a> · <a href="reisen.html">Reisen</a> · <a href="index.html#ratgeber">Ratgeber</a> · <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">LEGO</a></span>
   </div>
 </header>
 
 <section class="section gd-hero">
   <div class="container">
     <h1>Gute Deals DE</h1>
-    <p class="lead">Ausgewählte Shops, nach Bereichen sortiert. LEGO-Sets mit geprüften Preisen finden Sie auf <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">Brick Deals DE</a>.</p>
+    <p class="lead">Ratgeber und ausgewählte Shops, nach Bereichen sortiert. LEGO-Sets mit geprüften Preisen finden Sie auf <a href="https://razhwan03.github.io/wirkstatt-website/brick-deals-de/">Brick Deals DE</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="ratgeber">
+  <div class="container">
+    <span class="eyebrow">Ratgeber</span>
+    <h2>Hilfe bei der Auswahl</h2>
+    <p class="lead">Checklisten und Überblicke, die ein Thema erklären. Am Ende steht jeweils ein gekennzeichneter Partnerlink.</p>
+    <div class="grid grid-3">
+      <article class="card partner-card">
+        <span class="eyebrow">Ratgeber · Reisen</span>
+        <h3>Mietwagen buchen: Checkliste für den Urlaub</h3>
+        <p>Kaution, Versicherung, Tankregel und Abholung: die Punkte, die vor der Buchung eines Mietwagens geprüft werden sollten.</p>
+        <div class="cta-row"><a class="btn btn-primary" href="mietwagen-checkliste.html">Zum Ratgeber</a></div>
+      </article>
+      <article class="card partner-card">
+        <span class="eyebrow">Ratgeber · Haushalt und Küche</span>
+        <h3>Espresso unterwegs: Möglichkeiten im Überblick</h3>
+        <p>Handfilter, Mokka-Kanne, AeroPress oder Akku-Maschine: die Möglichkeiten für Reise, Camping und Büro im Überblick.</p>
+        <div class="cta-row"><a class="btn btn-primary" href="espresso-unterwegs.html">Zum Ratgeber</a></div>
+      </article>
+    </div>
   </div>
 </section>
 
 <section class="section section-soft">
   <div class="container">
+    <h2>Ausgewählte Shops nach Bereichen</h2>
     <div class="grid grid-3">
       <article class="card partner-card">
         <h3>Technik und Gaming</h3>
