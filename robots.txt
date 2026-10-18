@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gute-deals.github.io/sitemap.xml
